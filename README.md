@@ -14,7 +14,7 @@ A Python library for generating unique, distributed IDs using a modified Snowfla
 You can install the library using pip after building the package:
 
 ```bash
-pip install git+https://github.com/Iamsdt/snowflakeid.git
+pip install git+https://github.com/10XScale-in/snowflakeid.git
 ```
 
 ## Usage
