@@ -88,8 +88,8 @@ async def test_snowflake_id_collision_32bit3():
     generator = SnowflakeIDGenerator(config=TEST_CONFIG_64BIT)
     for _ in range(100):
         id = await generator.generate()
-        eid = generator.encode_base62(id)
-        decoded_id = generator.decode_base62(eid)
+        eid = SnowflakeIDGenerator.encode_base62(id)
+        decoded_id = SnowflakeIDGenerator.decode_base62(eid)
         assert id == decoded_id, "Decoded ID should match the original ID."
 
 

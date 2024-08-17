@@ -89,7 +89,8 @@ class SnowflakeIDGenerator:
             await asyncio.sleep(0.001)
         return timestamp
 
-    def encode_base62(self, snowflake_id: int) -> str:
+    @staticmethod
+    def encode_base62(snowflake_id: int) -> str:
         """Encodes a Snowflake ID to a Base62 string."""
         if snowflake_id == 0:
             return BASE62_CHARS[0]
@@ -100,7 +101,8 @@ class SnowflakeIDGenerator:
             encoded = BASE62_CHARS[remainder] + encoded
         return encoded
 
-    def decode_base62(self, encoded_id: str) -> int:
+    @staticmethod
+    def decode_base62(encoded_id: str) -> int:
         """Decodes a Base62 string to a Snowflake ID."""
         decoded = 0
         for i, char in enumerate(reversed(encoded_id)):

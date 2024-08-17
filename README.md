@@ -33,11 +33,11 @@ async def main():
     print(f"Generated Snowflake ID: {snowflake_id}")
 
     # Base62 encoding
-    encoded_id = generator.encode_base62(snowflake_id)
+    encoded_id = SnowflakeIDGenerator.encode_base62(snowflake_id)
     print(f"Base62 Encoded ID: {encoded_id}")
 
     # Decoding back to Snowflake ID
-    decoded_id = generator.decode_base62(encoded_id)
+    decoded_id = SnowflakeIDGenerator.decode_base62(encoded_id)
     print(f"Decoded Snowflake ID: {decoded_id}")
 
     # Extracting components from Snowflake ID
