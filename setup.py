@@ -18,4 +18,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.7",
+    keywords="snowflake id generator asyncio",  # Add relevant keywords
 )
