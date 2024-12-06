@@ -17,6 +17,11 @@ You can install the library using pip after building the package:
 pip install git+https://github.com/10XScale-in/snowflakeid.git
 ```
 
+or
+```bash
+pip install https://github.com/10XScale-in/snowflakeid/releases/download/v0.1.0/snowflakeid-0.1.0-py3-none-any.whl
+```
+
 ## Usage
 
 ### Basic Usage
